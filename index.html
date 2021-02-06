@@ -9,12 +9,21 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="text">Выберите уровень сложности:</div>
-    <div class="text text_little">Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.</div>
-    <div class="text text_big">Простой</div>
-    <div class="text text_big">Средний</div>
-    <div class="text text_big">Сложный</div>
-    <button class="button">Начать игру</button>
+    <div class="level">Выберите уровень сложности:</div>
+    <div class="level level__text">Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.</div>
+    <ul class="level level__list">
+      <li class="level level__item level__item_easy">Простой</li>
+      <li class="level level__item level__item_medium">Средний</li>
+      <li class="level level__item level__item_hard">Сложный</li>
+    </ul>
+    <div class="choice">
+      <button class="button">Начать игру</button>
+      <div class="cards">
+        <img src="./img/Карта 1.1.png" alt="карта 1.1" class="cards__item cards__item_1">
+        <img src="./img/Карта 1.2.png" alt="карта 1.2" class="cards__item cards__item_2">
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
