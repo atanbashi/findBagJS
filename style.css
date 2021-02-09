@@ -19,11 +19,9 @@ body {
 	max-width: 90%;
 	height: 100%;
 	margin: 6% auto 0;
-	display: none;
 }
 
 .level {
-
 	font-size: 57px;
 	line-height: 67px;
 }
@@ -35,7 +33,6 @@ body {
 }
 
 .choice {
-
 	padding-left: 3%;
 }
 
@@ -55,6 +52,7 @@ body {
 	list-style: none;
 	padding-left: 35px;
 	cursor: pointer;
+	transition: color .3s ease-in;
 }
 
 .radio__label::after {
@@ -72,6 +70,10 @@ body {
 
 .radio__input:checked + .radio__label::after {
 	opacity: 1;
+}
+
+.radio__label:hover {
+	color:#D62B2E;
 }
 
 .select {
@@ -94,6 +96,12 @@ body {
 	width: 24%;
 	height: 95px;
 	cursor: pointer;
+	transition: background .3s linear, color .2s ease-in-out;
+}
+
+.button:hover {
+	background: salmon;
+	color: rgb(22, 34, 46);
 }
 
 .cards {
@@ -119,6 +127,7 @@ body {
 	max-width: 80%;
 	margin: 0 auto;
 	height: 100vh;
+	display: none;
 }
 
 .cards-three {
@@ -131,6 +140,7 @@ body {
 .cards-three__item {
 	padding: 0 10px;
 	position: relative;
+	transition: top .2s ease-out, transform .3s linear;
 }
 
 .cards-three__item:hover {
@@ -158,6 +168,7 @@ body {
 .cards-six__item {
 	margin: 0 auto;
 	position: relative;
+	transition: top .2s ease-out, transform .3s linear;
 }
 
 .cards-six__item:hover {
@@ -184,6 +195,7 @@ body {
 
 .ten-cards__item {
 	position: relative;
+	transition: top .2s ease-out, transform .3s linear;
 }
 
 .ten-cards__item:hover {
